@@ -1,0 +1,137 @@
+﻿@model AppPFINAL.BD.Modelo.Tarjeta
+
+@{
+
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutCliente.cshtml";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Peticion Tarjeta</title>
+</head>
+<body>
+
+    @using (Html.BeginForm())
+    {
+      
+        <div class="text-center">
+            <h1>Solicite su Tarjeta aquí</h1>
+        </div>
+
+        <div class="container w-50">
+
+            <div class="form-horizontal">
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group col-12 m-2">
+                    <div>
+                        @Html.EditorFor(model => model.NumeroTarjeta, new { htmlAttributes = new { @class = "form-control", placeholder = "Numero Tarjeta" } })
+                        @Html.ValidationMessageFor(model => model.NumeroTarjeta, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-12 m-2">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Rol</label>
+                    <div class="input-group">
+                        <div class="input-group-text col-3">Tipo Tarjeta</div>
+                        @Html.ValidationMessageFor(model => model.TipoTarjeta, "", new { @class = "text-danger" })
+                        <select id="TipoTarjeta" name="TipoTarjeta" class="form-select">
+                            <option value="Visa">Visa</option>
+                            <option value="Mastercard">Mastercard</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group col-12 m-2">
+                    <div>
+                        @Html.EditorFor(model => model.LimiteCredito, new { htmlAttributes = new { @class = "form-control", placeholder = "Límite de Crédito" } })
+                        @Html.ValidationMessageFor(model => model.LimiteCredito, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group col-12 m-2">
+                    <div>
+                        @Html.EditorFor(model => model.MontoExtra, new { htmlAttributes = new { @class = "form-control", placeholder = "Monto Extra de Crédito" } })
+                        @Html.ValidationMessageFor(model => model.MontoExtra, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="col-12 m-2">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Rol</label>
+                    <div class="input-group">
+                        <div class="input-group-text col-3">Fecha de Solicitud</div>
+                        @Html.ValidationMessageFor(model => model.TipoTarjeta, "", new { @class = "text-danger" })
+                        @Html.EditorFor(model => model.FechaActivacion, new { htmlAttributes = new { @class = "form-control datepicker", Value = @ViewData["fechaActual"], @type = "date" } })
+                    </div>
+                </div>
+
+                <div class="col-12 m-2">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Rol</label>
+                    <div class="input-group">
+                        <div class="input-group-text col-3">Origen</div>
+
+                        <select id="Origen" name="Origen" class="form-select">
+                            <option value="Nacional">Nacional</option>
+                            <option value="Internacional">Internacional</option>
+                        </select>
+                    </div>
+                </div>
+                @*
+        <div class="form-group">
+            @Html.LabelFor(model => model.EstadoTarjeta, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.EstadoTarjeta)
+                    @Html.ValidationMessageFor(model => model.EstadoTarjeta, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>*@
+                
+            <div class="col-12 m-2">
+                <label class="visually-hidden" for="autoSizingInputGroup">Rol</label>
+                <div class="input-group">
+                    <div class="input-group-text col-3">Tipo Interes</div>
+                    @Html.ValidationMessageFor(model => model.TipoInteres, "", new { @class = "text-danger" })
+                    <select id="TipoInteres" name="TipoInteres" class="form-select">
+                        <option value="Regular">Regular</option>
+                       
+                    </select>
+                </div>
+            </div>
+                
+                <div class="col-12 m-2">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Rol</label>
+                    <div class="input-group">
+                        <div class="input-group-text col-3">Cédula</div>
+                        @Html.DropDownList("Cedula", null, htmlAttributes: new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="">
+                        <input type="submit" value="Create" class="btn btn-outline-primary float-end col-2 m-1" />
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-outline-primary float-end col-2 m-1" onclick="location.href='@Url.Action("Index", "Cliente")'">
+                            Volver
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PFinalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Estado_Tarjeta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Estado" Type="varchar" MaxLength="20" />
+    <Property Name="NumeroTarjeta" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="TipoUsuario" />
+    </Key>
+    <Property Name="TipoUsuario" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Cedula" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Solicitud_Tarjeta">
+    <Key>
+      <PropertyRef Name="Respuesta_Solicitud" />
+    </Key>
+    <Property Name="Respuesta_Solicitud" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Descripcion_Respuesta" Type="varchar" MaxLength="1000" />
+    <Property Name="Cedula" Type="int" />
+  </EntityType>
+  <EntityType Name="Tarjeta">
+    <Key>
+      <PropertyRef Name="NumeroTarjeta" />
+    </Key>
+    <Property Name="NumeroTarjeta" Type="bigint" Nullable="false" />
+    <Property Name="TipoTarjeta" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LimiteCredito" Type="int" Nullable="false" />
+    <Property Name="MontoExtra" Type="int" Nullable="false" />
+    <Property Name="FechaActivacion" Type="date" Nullable="false" />
+    <Property Name="Origen" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cedula" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Cedula" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cedula" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Apellido1" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Apellido2" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Correo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Contrasenna" Type="varchar" MaxLength="75" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Estado_Tarjeta">
+    <End Role="Tarjeta" Type="Self.Tarjeta" Multiplicity="0..1" />
+    <End Role="Estado_Tarjeta" Type="Self.Estado_Tarjeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tarjeta">
+        <PropertyRef Name="NumeroTarjeta" />
+      </Principal>
+      <Dependent Role="Estado_Tarjeta">
+        <PropertyRef Name="NumeroTarjeta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Solicitud_Tarjeta">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Solicitud_Tarjeta" Type="Self.Solicitud_Tarjeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Cedula" />
+      </Principal>
+      <Dependent Role="Solicitud_Tarjeta">
+        <PropertyRef Name="Cedula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_Rol">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Rol" Type="Self.Rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Cedula" />
+      </Principal>
+      <Dependent Role="Rol">
+        <PropertyRef Name="Cedula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_Tarjeta">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Tarjeta" Type="Self.Tarjeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Cedula" />
+      </Principal>
+      <Dependent Role="Tarjeta">
+        <PropertyRef Name="Cedula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PFinalModelStoreContainer">
+    <EntitySet Name="Estado_Tarjeta" EntityType="Self.Estado_Tarjeta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Solicitud_Tarjeta" EntityType="Self.Solicitud_Tarjeta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tarjeta" EntityType="Self.Tarjeta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Estado_Tarjeta" Association="Self.FK_Estado_Tarjeta">
+      <End Role="Tarjeta" EntitySet="Tarjeta" />
+      <End Role="Estado_Tarjeta" EntitySet="Estado_Tarjeta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Solicitud_Tarjeta" Association="Self.FK_Solicitud_Tarjeta">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Solicitud_Tarjeta" EntitySet="Solicitud_Tarjeta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Rol" Association="Self.FK_Usuario_Rol">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Rol" EntitySet="Rol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Tarjeta" Association="Self.FK_Usuario_Tarjeta">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Tarjeta" EntitySet="Tarjeta" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

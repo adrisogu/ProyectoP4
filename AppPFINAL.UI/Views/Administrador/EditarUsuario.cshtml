@@ -1,0 +1,102 @@
+﻿@model AppPFINAL.BD.Modelo.Usuario
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditarUsuario</title>
+</head>
+<body>
+    @using (Html.BeginForm("ModificarUsuario", "Administrador", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="text-center mt-2">
+            <h1>Editar Usuario</h1>
+        </div>
+        <div class="container  mt-5 w-50">
+            <div class="form-horizontal ">
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="col-12 m-2">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Cedula</label>
+                    <div class="input-group">
+                        <div class="input-group-text col-3">Cédula</div>
+                        @Html.EditorFor(model => model.ID, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                @Html.HiddenFor(model => model.Cedula)
+                <div class="col-12 m-2">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Nombre</label>
+                    <div class="input-group">
+                        <div class="input-group-text col-3">Nombre</div>
+                        @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-12 m-2">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Primer Apellido</label>
+                    <div class="input-group">
+                        <div class="input-group-text col-3">Primer Apellido</div>
+                        @Html.EditorFor(model => model.Apellido1, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Apellido1, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-12 m-2">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Segundo Apellido</label>
+                    <div class="input-group">
+                        <div class="input-group-text col-3">Segundo Apellido</div>
+                        @Html.EditorFor(model => model.Apellido2, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Apellido2, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-12 m-2">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Correo Electronico</label>
+                    <div class="input-group">
+                        <div class="input-group-text col-3">Correo Electrónico</div>
+                        @Html.EditorFor(model => model.Correo, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Correo, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-12 m-2">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Contrasenna</label>
+                    <div class="input-group">
+                        <div class="input-group-text col-3">Contraseña</div>
+                        @Html.EditorFor(model => model.Contrasenna, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Contrasenna, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-12 m-2">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Rol</label>
+                    <div class="input-group">
+                        <div class="input-group-text col-3">Rol</div>
+                        <select id="Rol" name="Rol" class="form-select">
+                            <option value="A">Administrador</option>
+                            <option value="B">Cliente</option>
+
+                        </select>
+                        @Html.ValidationMessageFor(model => model.Rol, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <input type="submit" value="Save" class="btn btn-outline-primary float-end col-2 m-1" />
+                    </div>
+                    <div>
+                        <a href="~/Administrador/VerUsuarios" class="btn btn-outline-primary float-end col-2 m-1">Volver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</body>
+</html>

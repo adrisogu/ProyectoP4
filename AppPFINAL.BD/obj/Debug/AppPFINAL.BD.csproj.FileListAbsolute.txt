@@ -1,0 +1,80 @@
+D:\U.I.A\Progra IV\Proyecto\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll.config
+D:\U.I.A\Progra IV\Proyecto\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll
+D:\U.I.A\Progra IV\Proyecto\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.pdb
+D:\U.I.A\Progra IV\Proyecto\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.dll
+D:\U.I.A\Progra IV\Proyecto\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.dll
+D:\U.I.A\Progra IV\Proyecto\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.xml
+D:\U.I.A\Progra IV\Proyecto\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.xml
+D:\U.I.A\Progra IV\Proyecto\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.CoreCompileInputs.cache
+D:\U.I.A\Progra IV\Proyecto\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.dll
+D:\U.I.A\Progra IV\Proyecto\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.pdb
+D:\U.I.A\Progra IV\Proyecto\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.AssemblyReference.cache
+C:\Users\valer\Downloads\prueb\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll.config
+C:\Users\valer\Downloads\prueb\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll
+C:\Users\valer\Downloads\prueb\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.pdb
+C:\Users\valer\Downloads\prueb\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.dll
+C:\Users\valer\Downloads\prueb\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\valer\Downloads\prueb\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.xml
+C:\Users\valer\Downloads\prueb\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\valer\Downloads\prueb\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.AssemblyReference.cache
+C:\Users\valer\Downloads\prueb\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.CoreCompileInputs.cache
+C:\Users\valer\Downloads\prueb\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.dll
+C:\Users\valer\Downloads\prueb\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.pdb
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll.config
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.pdb
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.CopyComplete
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.dll
+C:\Users\Usuario\Desktop\programacion 4\Proyecto\AppPFINAL.UI (1)\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.pdb
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll.config
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.pdb
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.dll
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.xml
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.CoreCompileInputs.cache
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.CopyComplete
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.dll
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.pdb
+C:\Users\ejgar\Desktop\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.AssemblyReference.cache
+C:\Users\valer\Downloads\Final\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll.config
+C:\Users\valer\Downloads\Final\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll
+C:\Users\valer\Downloads\Final\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.pdb
+C:\Users\valer\Downloads\Final\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.dll
+C:\Users\valer\Downloads\Final\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\valer\Downloads\Final\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.xml
+C:\Users\valer\Downloads\Final\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\valer\Downloads\Final\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.AssemblyReference.cache
+C:\Users\valer\Downloads\Final\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.CoreCompileInputs.cache
+C:\Users\valer\Downloads\Final\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.dll
+C:\Users\valer\Downloads\Final\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.pdb
+D:\U.I.A\Progra IV\Proyecto\Proyecto Final\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll.config
+D:\U.I.A\Progra IV\Proyecto\Proyecto Final\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll
+D:\U.I.A\Progra IV\Proyecto\Proyecto Final\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.pdb
+D:\U.I.A\Progra IV\Proyecto\Proyecto Final\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.dll
+D:\U.I.A\Progra IV\Proyecto\Proyecto Final\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.dll
+D:\U.I.A\Progra IV\Proyecto\Proyecto Final\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.xml
+D:\U.I.A\Progra IV\Proyecto\Proyecto Final\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.xml
+D:\U.I.A\Progra IV\Proyecto\Proyecto Final\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.AssemblyReference.cache
+D:\U.I.A\Progra IV\Proyecto\Proyecto Final\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.CoreCompileInputs.cache
+D:\U.I.A\Progra IV\Proyecto\Proyecto Final\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.dll
+D:\U.I.A\Progra IV\Proyecto\Proyecto Final\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.pdb
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll.config
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.dll
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\AppPFINAL.BD.pdb
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.csproj.CopyComplete
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.dll
+C:\Users\Usuario\Desktop\proyecto finalizado\AppPFINAL.UI\AppPFINAL.UI\AppPFINAL.BD\obj\Debug\AppPFINAL.BD.pdb

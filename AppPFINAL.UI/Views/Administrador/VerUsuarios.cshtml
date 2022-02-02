@@ -1,0 +1,86 @@
+﻿@model IEnumerable<AppPFINAL.BD.Modelo.Usuario>
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="pt-3">
+        <div class="text-center">
+            <h1>Matenimiento de usuario</h1>
+        </div>
+        @*<div class="m-4">
+                <a href="~/Cliente/Consultar" class="btn btn-outline-primary">Solicitudes de Tarjetas</a>
+            </div>*@
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cedula)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Apellido1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Apellido2)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Correo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Contrasenna)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rol)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contrasenna)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rol)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditarUsuario", new { id = item.Cedula }, new { style = "text-decoration:none; color:black" }) |
+                @Html.ActionLink("Eliminar", "EliminarUsuario", new { id = item.ID }, new { style = "text-decoration:none; color:black" })
+
+
+            </td>
+
+         
+        </tr>
+            }
+
+        </table>
+    </div>
+</body>
+</html>

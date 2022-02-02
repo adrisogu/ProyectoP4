@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PPFINALModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tarjeta">
+    <Key>
+      <PropertyRef Name="NumeroTarjeta" />
+    </Key>
+    <Property Name="NumeroTarjeta" Type="bigint" Nullable="false" />
+    <Property Name="TipoTarjeta" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LimiteCredito" Type="int" Nullable="false" />
+    <Property Name="MontoExtra" Type="int" Nullable="false" />
+    <Property Name="FechaActivacion" Type="date" Nullable="false" />
+    <Property Name="Origen" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EstadoTarjeta" Type="bit" Nullable="false" />
+    <Property Name="TipoInteres" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cedula" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Cedula" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cedula" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Apellido1" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Apellido2" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Correo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Contrasenna" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Rol" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <Association Name="FK_Usuario_Tarjeta">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Tarjeta" Type="Self.Tarjeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Cedula" />
+      </Principal>
+      <Dependent Role="Tarjeta">
+        <PropertyRef Name="Cedula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PPFINALModelStoreContainer">
+    <EntitySet Name="Tarjeta" EntityType="Self.Tarjeta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Usuario_Tarjeta" Association="Self.FK_Usuario_Tarjeta">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Tarjeta" EntitySet="Tarjeta" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

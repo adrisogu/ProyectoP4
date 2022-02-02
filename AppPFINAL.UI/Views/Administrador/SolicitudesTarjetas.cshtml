@@ -1,0 +1,74 @@
+﻿@model IEnumerable<AppPFINAL.BD.Modelo.Tarjeta>
+
+@{
+
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Consultar mis Tarjetas</title>
+</head>
+
+<body>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoTarjeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LimiteCredito)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.MontoExtra)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.FechaActivacion)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.Origen)
+                </th>*@
+            @*<th>
+                    @Html.DisplayNameFor(model => model.Usuario.Nombre)
+                </th>*@
+        </tr>
+
+        @foreach (var item in Model)
+        {
+
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoTarjeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LimiteCredito)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.MontoExtra)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaActivacion)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Origen)
+        </td>*@
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Usuario.Nombre)
+        </td>*@
+
+    <td>
+        @Html.ActionLink("Editar", "Edit", new { id = item.NumeroTarjeta }, new { style = "text-decoration:none; color:black" })
+
+    </td>
+
+    </tr>
+        }
+</body>
+</html>

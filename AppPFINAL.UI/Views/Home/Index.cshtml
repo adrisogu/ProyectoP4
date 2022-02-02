@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@{
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+
+<body>
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+    {
+
+        <div class="mt-5 text-center">
+            <h1>LOGIN</h1>
+        </div>
+        <div class="container col-2 mt-5">
+            <div class="justify-content-center aling-items-center vh-100">
+                <div class="container-fluid col-auto text-center">
+                    <div>
+                        <input class="form-control text-center mb-2" type="text" id="Cedula" name="Cedula" placeholder="Número de Cédula">
+                    </div>
+                    <div>
+                        <div>
+                            <input class="form-control text-center mb-2" type="password" id="Contrasenna" name="Contrasenna" placeholder="Contraseña">
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <input type="submit" value="Ingresar" class="btn btn-outline-primary col-12" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</body>

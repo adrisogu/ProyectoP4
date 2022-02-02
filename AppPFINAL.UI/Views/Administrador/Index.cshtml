@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <div class="mt-2 text-center">
+            <h1>Ventana Administrador</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row row-cols-md-6 g-4 justify-content-center mt-5">
+                <div class="">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Mantenimiento de Usuarios</h5>
+                            <p class="card-text">Ingresa para ver el mantenimiento de Usuarios</p>
+                            <button type="button" class="btn btn-outline-primary w-100" onclick="location.href='@Url.Action("VerUsuarios", "Administrador")'">
+                                Ingresar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Solicitudes de Tarjetas</h5>
+                            <p class="card-text">Ingresa para ver las solicitudes de tarjetas de crédito en el sistema.</p>
+                            <button type="button" class="btn btn-outline-primary w-100" onclick="location.href='@Url.Action("SolicitudesTarjetas", "Administrador")'">
+                                Ingresar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
